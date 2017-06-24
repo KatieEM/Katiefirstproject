@@ -33,22 +33,47 @@ p {
 }
 /*here is your table setting*/ 
 th, td {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
 }
 
 table  {
     display: inline-block;
     margin: 0 auto;
     width: auto;
-    font-size: 20px 
+    font-size: 20px;
+    border-collapse: collapse;
+}
+th { 
+    border-bottom: 4px solid #F7819F;
+    font-size: 30px;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
 }
 
+
+td:hover,tr:hover {background-color: #F7819F}
+body > table > tbody > tr:nth-child(1):hover{background:transparent} 
 a { display: inline-block;
     margin: 0 auto;
     width: auto;
     font-size: 20px;
     color: #000000; 
-    
+    text-decoration: none; 
+    padding-left: 5px;
 }
 
+#mybutton a { display: inline-block;
+    margin: 0 auto;
+    width: auto;
+    font-size: 150px;
+    color: #DF013A; 
+    text-decoration: none; 
+    padding-left:30px;
+}
+
+
 #katiesfirstdiv a {min-width: 200px; margin: 100px; border: 3px solid #F5A9D0; padding:30px 30px; font-size: 40px; text-decoration: none; color: #FA58AC}
+#katiesfirstdiv a:hover {background:#FA58AC;color:#fff;}
+

@@ -3,4 +3,4 @@ class WelcomeController < ApplicationController
   end
 end
 
-#5.10 on guide :) Well done cutiepieeeeeees 
+

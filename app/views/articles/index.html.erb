@@ -1,12 +1,16 @@
 
-<h1>Katies first project blog</h1>
+<h1><i class="fa fa-heart"></i> Katies first project blog <i class="fa fa-heart"></i></h1>
 
 
- 
+
+
 <table>
   <tr>
     <th>Title</th>
     <th>What's on your mind?</th>
+    <th>See more</th>
+    <th>Edit</th>
+    <th>Remove</th>
   </tr>
  
   <% @articles.each do |article| %>
@@ -15,12 +19,15 @@
       <td><%= article.text %></td>
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Remove', article_path(article),
+      <td><%= link_to 'Remove' , article_path(article),
               method: :delete,
-              data: { confirm: 'Really!? You have to be sure...' } %></td>
+              data: { confirm: 'Really!? You have to be sure...' }%>
+
     </tr>
   <% end %>
 </table>
+
+
 
 <div id="katiesfirstdiv">
  <%= link_to 'New article', new_article_path %> 
